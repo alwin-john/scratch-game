@@ -31,6 +31,7 @@ public class Main {
             GameEngineImpl engine = new GameEngineImpl(config, betAmount);
             System.out.println(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(engine.play(engine.instantiateBoard())));
         } catch (IOException e) {
+            System.out.println("Invalid config or config not found");
             throw new ScratchGameException("Invalid Config", e);
         }
     }
