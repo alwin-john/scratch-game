@@ -1,6 +1,6 @@
 ## Scratch Game ##
 
-To build the project open terminal in project root file
+To build the project open terminal in the project root file
 
 ```
 .\gradlew build
